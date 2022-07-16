@@ -6,7 +6,7 @@ import 'package:i_poster/features/add_task/data/model/task_model.dart';
 import 'package:i_poster/features/add_task/domain/entity/task.dart';
 
 String ficture(String fileName) =>
-    File('test/fixture/' + fileName).readAsStringSync();
+    File('test/fixture/$fileName').readAsStringSync();
 
 void main() {
   final tTaskModel = TaskModel(
